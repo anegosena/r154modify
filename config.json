@@ -1,6 +1,6 @@
 {
   "send": {
-    "workers": 5,
+    "workers": 1,
     "maxLoopTx": 10000000,
     "minDelayTxSeconds": 10,
     "maxDelayTxSeconds": 100,
@@ -13,8 +13,8 @@
   "swap": {
     "enabled": true,
     "workers": 1000,
-    "minOrderSizeUsd": 1.05,
-    "maxOrderSizeUsd": 3,
+    "minOrderSizeUsd": 1.01,
+    "maxOrderSizeUsd": 2,
     "minDelaySeconds": 5,
     "maxDelaySeconds": 10,
     "maxLoopTakes": 100000,
@@ -23,22 +23,22 @@
       "usdc_cc"
     ],
     "maker": {
-      "minBps": 0,
-      "maxBps": 1,
+      "minBps": 4,
+      "maxBps": 6,
       "expiresHours": 6,
       "maxOpenOrders": 1,
       "rateLimitCooldownMinutes": 62,
-      "balanceLockCooldownSeconds": 120,
+      "balanceLockCooldownSeconds": 122,
       "takerIdleSecondsBeforeMaker": 10,
       "cancelAfterIdleMinutes": 5
     },
     "taker": {
-      "minBps": 1,
+      "minBps": 5,
       "maxTakesPerCounterpartyPerWeek": 5,
-      "balanceLockCooldownSeconds": 90,
+      "balanceLockCooldownSeconds": 92,
       "orderBlacklistSeconds": 60,
       "maxDrainPerLoop": 1,
-      "fastScanIntervalSeconds": 2
+      "fastScanIntervalSeconds": 1
     }
   },
   "captcha": {
@@ -61,7 +61,7 @@
     "allowedChatIds": [],
     "autoReport": {
       "enabled": true,
-      "intervalMinutes": 30
+      "intervalMinutes": 50
     }
   }
 }
