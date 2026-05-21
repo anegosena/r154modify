@@ -1,6 +1,6 @@
 {
   "defaultAccount": "main",
-  "masterWalletPrivateKey": "YOUR_PRIVATE_KEY",
+  "masterWalletPrivateKey": "0xYOUR_PRIVATE_KEY",
   "accounts": [
     {
       "name": "",
