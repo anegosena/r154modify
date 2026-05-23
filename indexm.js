@@ -595,15 +595,15 @@ function buildSwapCapMessage(accountName, capCount, roundNumber, waitMs) {
   const cooldownLabel = waitMs > 0 ? `${waitMin}m ${waitSec}s` : "menunggu jam berikutnya";
   const nowLabel = nowJakartaLabel ? nowJakartaLabel() : new Date().toISOString();
   const lines = [
-    `🔔 *Swap Cap Reached*`,
+    `🔔 **Swap Cap Reached**`,
     ``,
-    `👤 Akun   : ${accountName}`,
-    `✅ Swap    : ${capCount}/${capCount} (cap tercapai)`,
-    `🔄 Round   : ${roundNumber}`,
-    `⏳ Cooldown: ${cooldownLabel}`,
-    `🕐 Waktu   : ${nowLabel}`,
+    `👤 Akun: ${accountName}`,
+    `✅ Swap: ${capCount}/${capCount} (cap tercapai)`,
+    `🔄 Round: ${roundNumber}`,
+    `⏳ CD: ${cooldownLabel}`,
+    `🕐 Waktu: ${nowLabel}`,
     ``,
-    `Bot akan otomatis lanjut di round ${roundNumber + 1} setelah cooldown selesai.`
+    `Lanjut di round ${roundNumber + 1} setelah cooldown selesai.`
   ];
   return lines.join("\n");
 }
